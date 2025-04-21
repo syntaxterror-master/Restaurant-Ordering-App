@@ -1,0 +1,162 @@
+body {
+  margin: auto;
+  font-family: "Smythe", Verdana;
+}
+
+.header-container {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./assets/acaeaea44c5e3a8cd7159c5d52f26662.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 167px;
+}
+
+.header-container h1, h2 {
+  color: white;
+  margin-bottom: 0;
+  margin-left: 46px;
+}
+
+.header-container h1 {
+  font-size: 34px;
+  line-height: 24px;
+}
+
+.header-container h2 {
+  font-size: 22px;
+  line-height: 14px;
+}
+
+.item-container {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 67px;
+  border-bottom: 1px solid #D2D2D2;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+
+.item-icon {
+ font-size: 78px;
+ margin-top: 0;
+}
+
+.item-name {
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.item-ingredients{
+  color: #8B8B8B;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.item-price {
+  font-size: 20px;
+  color: #000000;
+  margin-top: 0;
+}
+
+.add-btn {
+  margin: auto;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1.5px solid #DEDEDE;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #D2D2D2;
+  border: 1.5px solid black;
+
+}
+
+/* Order Container */
+
+.order{
+  display: none;
+}
+
+.order-container {
+  margin: auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-heading {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 45px;
+}
+
+.ordered-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ordered-item-sub-container{
+  display: flex;
+  align-items: center;
+}
+
+.order-name{
+  font-size: 28px;
+  margin: 0;
+}
+
+.remove-btn {
+  display: block;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  color: #8B8B8B;
+  margin-left: 13px;
+  cursor: pointer;
+}
+
+.price {
+  font-size: 20px;
+}
+
+hr {
+  margin-top: 31px;
+  height: 2px;
+  background-color: #393333;
+}
+
+.total-price-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-price {
+  font-size: 28px;
+  color: #0E0E0E;
+}
+
+.complete-order-btn {
+  font-family: Verdana;
+  background-color: #16DB99;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  height: 60px;
+  margin: 53px 0;
+}
