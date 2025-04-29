@@ -20,26 +20,69 @@
     <main>
       <section id="menu"></section>
       
-
       <section class="order" id="order-section">
           <div class="order-container">
           <h3 class="order-heading">Your order</h3>
 
-          <div id="ordered-item-container">
-            
-          </div>
-
+          <div id="ordered-item-container"></div>
 
             <div><hr></div>
 
           <div class="total-price-container">
             <h3 class="total-price">Total price:</h3>
-            <p class="price">$26</p>
+            <p id="total-price" class="price"></p>
           </div>
 
-            <button class="complete-order-btn">Complete order</button>
+            <button id="complete-order-btn" class="complete-order-btn">Complete order</button>
           </div>
       </section>
+
+      <section>
+
+        <div id="payment-form" class="form-container form-container-display-none">
+          <h3 >Enter card details</h3>
+
+          <form id="form" class="form">
+
+            <input 
+            type="text"
+             name="enterName" 
+             id="enterName" 
+             placeholder="Enter your name"
+             aria-placeholder="Enter your name"
+             required
+             >
+
+             <input 
+             type="text"
+             name="enterCardNumber"
+             id="enterCardNumber"
+             placeholder="Enter card number"
+             aria-placeholder="Enter card number"
+             maxlength="19"
+             inputmode="numeric"
+             required
+             >
+
+             <input 
+             type="password"
+             name="enterCCV"
+             id="enterCCV"
+             placeholder="Enter CCV"
+             aria-placeholder="Enter CCV"
+             maxlength="3"
+             pattern="\d{3}"
+             inputmode="numeric"
+             required
+             >
+             <button class="pay-btn" type="submit" id="pay-btn">Pay</button>
+          </form>
+
+
+        </div>
+      </section>
+
+      <section id="order-complete"></section>
 
     </main>
 
